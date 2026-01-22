@@ -1,0 +1,373 @@
+✅ Training abgeschlossen. Artefakte gespeichert.
+Regime 0: P(up) = 50.47%, Sharpe = -0.01, N = 8338
+Regime 1: P(up) = 51.65%, Sharpe = 0.05, N = 7747
+Regime 2: P(up) = 51.19%, Sharpe = 0.00, N = 7484
+Regime 3: P(up) = 50.18%, Sharpe = -0.02, N = 6662
+Regime 4: P(up) = 50.55%, Sharpe = 0.02, N = 8736
+Regime 5: P(up) = 51.70%, Sharpe = 0.04, N = 4783
+(venv) PS D:\market_regime_discovery>
+
+
+
+
+
+
+
+
+(venv) PS D:\market_regime_discovery> python scripts/infer_latest.py
+2026-01-11 23:58:51.335761: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-11 23:58:53.639255: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+🔍 Lade trainierte Artefakte...
+2026-01-11 23:58:55.381291: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+📥 Lade aktuelle Marktdaten...
+   Geladen: 43817 Candles (bis 2024-12-31 23:00:00+00:00)
+⚙️  Bereite Daten für Inferenz vor...
+🧠 Führe Inferenz durch...
+
+✅ Aktuelles Marktregime erkannt:
+   Regime-ID       : 1
+   P(up next hour) : 51.65%
+   Historische Basis: 7747 Beispiele
+   Letzter Candle  : 2024-12-31 23:00:00+00:00
+
+
+
+
+
+
+
+
+
+
+
+
+   ✅ Training abgeschlossen. Artefakte gespeichert.
+Regime 0: P(up) = 50.52%, Sharpe = 0.01, N = 6560
+Regime 1: P(up) = 51.01%, Sharpe = 0.03, N = 7910
+Regime 2: P(up) = 47.08%, Sharpe = -0.04, N = 1215
+Regime 3: P(up) = 50.97%, Sharpe = 0.00, N = 3237
+Regime 4: P(up) = 50.81%, Sharpe = 0.02, N = 9970
+Regime 5: P(up) = 51.26%, Sharpe = 0.00, N = 5763
+Regime 6: P(up) = 52.58%, Sharpe = 0.11, N = 97
+Regime 7: P(up) = 51.54%, Sharpe = 0.00, N = 3902
+Regime 8: P(up) = 51.39%, Sharpe = 0.04, N = 5096
+(venv) PS D:\market_regime_discovery>  
+
+
+
+
+
+
+
+
+
+
+
+154/154 ━━━━━━━━━━━━━━━━━━━━ 1s 7ms/step - loss: 0.2315 - val_loss: 0.2137 - learning_rate: 0.0010
+2026-01-12 00:27:55.139860: E tensorflow/core/framework/node_def_util.cc:680] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+🎯 GMM wählte 9 Cluster (Min-Größe: 500)
+   Regime 0: 2552 Samples
+   Regime 1: 9847 Samples
+   Regime 2: 3028 Samples
+   Regime 3: 9628 Samples
+   Regime 4: 799 Samples
+   Regime 5: 4009 Samples
+   Regime 7: 2203 Samples
+   Regime 8: 6367 Samples
+   Regime 9: 5317 Samples
+
+✅ Training abgeschlossen. Artefakte gespeichert.
+Regime 0: P(up) = 50.36%, Sharpe = -0.04, N = 2522
+Regime 1: P(up) = 50.25%, Sharpe = -0.00, N = 9851
+Regime 2: P(up) = 51.22%, Sharpe = 0.03, N = 3036
+Regime 3: P(up) = 50.94%, Sharpe = 0.02, N = 9664
+Regime 4: P(up) = 47.36%, Sharpe = -0.04, N = 796
+Regime 5: P(up) = 50.68%, Sharpe = 0.02, N = 3992
+Regime 7: P(up) = 50.88%, Sharpe = 0.01, N = 2205
+Regime 8: P(up) = 51.88%, Sharpe = 0.04, N = 6423
+Regime 9: P(up) = 51.70%, Sharpe = 0.03, N = 5261
+
+
+
+
+
+
+
+
+
+
+
+
+
+✅ Training abgeschlossen. Artefakte gespeichert.
+Regime 0: P(up) = 50.98%, Sharpe = 0.02, N = 4551
+Regime 1: P(up) = 51.41%, Sharpe = 0.03, N = 6090
+Regime 2: P(up) = 50.67%, Sharpe = 0.03, N = 4847
+Regime 3: P(up) = 50.36%, Sharpe = 0.01, N = 3987
+Regime 4: P(up) = 51.85%, Sharpe = 0.02, N = 2239
+Regime 5: P(up) = 50.87%, Sharpe = -0.01, N = 4370
+Regime 6: P(up) = 50.82%, Sharpe = 0.01, N = 7899
+Regime 7: P(up) = 51.11%, Sharpe = 0.03, N = 4457
+Regime 8: P(up) = 49.84%, Sharpe = -0.02, N = 4073
+Regime 9: P(up) = 52.97%, Sharpe = 0.03, N = 1197
+(venv) PS D:\market_regime_discovery> python scripts/walk_forward_validate.py
+2026-01-12 18:21:11.476314: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-12 18:21:13.730954: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+D:\market_regime_discovery\venv\Lib\site-packages\keras\src\export\tf2onnx_lib.py:8: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, "object"):
+🔍 Lade Konfiguration...
+D:\market_regime_discovery\src\ingestion.py:12: UserWarning: The argument 'infer_datetime_format' is deprecated and will be removed in a future version. A strict version of it is now the default, see https://pandas.pydata.org/pdeps/0004-consistent-to-datetime-parsing.html. You can safely remove this argument.  
+  df[datetime_col] = pd.to_datetime(df[datetime_col], utc=True, infer_datetime_format=True)
+📊 Geladen: 43817 Candles (2020-01-01 00:00:00+00:00 bis 2024-12-31 23:00:00+00:00)
+   Train: 26251 Candles (bis 2022-12-31)
+   Test:  17543 Candles (ab 2023-01-01)
+
+🚀 Trainiere auf historischen Daten (2020–2022)...
+WARNING:tensorflow:From D:\market_regime_discovery\venv\Lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2026-01-12 18:21:16.718743: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+⚠️  Instabile Cluster identifiziert: {np.int64(0), np.int64(2), np.int64(6), np.int64(8), np.int64(9)}
+🧪 Wende auf Out-of-Sample-Daten an (2023–2024)...
+2026-01-12 18:22:46.123261: E tensorflow/core/framework/node_def_util.cc:680] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+
+✅ Walk-Forward Validierungsergebnisse:
+Regime | P(up)_Train | P(up)_Test | ΔP(up) | Stabil?
+-------|--------------|------------|--------|---------
+     0 |       51.19% |      N/A     |   N/A  | N/A (fehlt im Test)
+     1 |       50.91% |     51.33% |   0.42% | ✅ Ja
+     2 |       50.28% |     50.94% |   0.66% | ✅ Ja
+     3 |       50.27% |     51.62% |   1.35% | ✅ Ja
+     4 |       50.66% |     52.76% |   2.09% | ✅ Ja
+     5 |       47.93% |     60.00% |  12.07% | ⚠️ Nein
+     6 |       52.38% |      N/A     |   N/A  | N/A (fehlt im Test)
+     7 |       50.04% |     54.00% |   3.97% | ⚠️ Nein
+     8 |       50.64% |     50.69% |   0.05% | ✅ Ja
+     9 |       51.74% |      N/A     |   N/A  | N/A (fehlt im Test)
+
+📈 Erweiterte Metriken:
+   Novel Latent Fraction: 0.050
+   Latent Variance Drift: 0.417
+   Transition Entropy: 0.101
+   Instabile Regimes (ΔP(up) > 3%): 2
+   Stabilste Regimes: [1, 2, 3, 4, 8]
+
+💾 Ergebnisse gespeichert unter: validation/walk_forward_results.json
+(venv) PS D:\market_regime_discovery> 
+
+
+
+
+
+
+
+
+
+2026-01-12 23:55:21.152760: E tensorflow/core/framework/node_def_util.cc:680] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+D:\market_regime_discovery\venv\Lib\site-packages\umap\umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+📉 Latent dimensionality reduced to 4 (umap)
+⚠️  Instabile Cluster identifiziert: {np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7),, np.int64(8), np.int64(9)}
+🎯 GMM wählte 10 Cluster
+2026-01-12 23:59:12.437747: E tensorflow/core/framework/node_def_util.cc:680] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_14}}
+📊 Silhouette: 0.455 | Transition Entropy: 0.045
+
+✅ Multi-Asset Training abgeschlossen. Artefakte gespeichert.
+
+BTCUSDT Regime-Statistiken:
+  Regime 0: P(up) = 50.92%, Sharpe = 0.00, N = 11603
+  Regime 3: P(up) = 50.67%, Sharpe = 0.02, N = 9234
+  Regime 5: P(up) = 51.85%, Sharpe = 0.02, N = 8733
+  Regime 6: P(up) = 50.37%, Sharpe = 0.01, N = 7927
+  Regime 8: P(up) = 50.65%, Sharpe = 0.01, N = 6213
+
+ETHUSDT Regime-Statistiken:
+  Regime 1: P(up) = 50.86%, Sharpe = 0.01, N = 25181
+  Regime 9: P(up) = 50.47%, Sharpe = 0.01, N = 18529
+
+BNBUSDT Regime-Statistiken:
+  Regime 2: P(up) = 50.85%, Sharpe = 0.01, N = 19499
+  Regime 4: P(up) = 49.10%, Sharpe = 0.01, N = 13741
+  Regime 7: P(up) = 51.89%, Sharpe = 0.02, N = 10470
+(venv) PS D:\market_regime_discovery>  
+
+
+
+
+
+
+
+📊 Silhouette: 0.479 | Transition Entropy: 0.063
+
+✅ Multi-Asset Training abgeschlossen. Artefakte gespeichert.
+
+BTCUSDT Regime-Statistiken:
+  Regime 1: P(up) = 50.90%, Sharpe = 0.00, N = 11704 | Dauer: 689.0h
+  Regime 3: P(up) = 51.79%, Sharpe = 0.02, N = 8589 | Dauer: 4300.3h
+  Regime 4: P(up) = 50.47%, Sharpe = 0.01, N = 7860 | Dauer: 1310.6h
+  Regime 5: P(up) = 50.61%, Sharpe = 0.02, N = 8958 | Dauer: 814.2h
+  Regime 8: P(up) = 50.75%, Sharpe = 0.01, N = 6599 | Dauer: 549.8h
+
+ETHUSDT Regime-Statistiken:
+  Regime 0: P(up) = 50.21%, Sharpe = 0.01, N = 21338 | Dauer: 131.5h
+  Regime 6: P(up) = 51.16%, Sharpe = 0.01, N = 22322 | Dauer: 137.8h
+
+BNBUSDT Regime-Statistiken:
+  Regime 2: P(up) = 51.27%, Sharpe = 0.03, N = 16861 | Dauer: 47.6h
+  Regime 7: P(up) = 50.97%, Sharpe = 0.01, N = 13009 | Dauer: 85.0h
+  Regime 9: P(up) = 49.28%, Sharpe = 0.01, N = 13840 | Dauer: 69.0h
+2026-01-13 01:50:44.190211: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-13 01:51:11.318848: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+🔍 Lade trainierte Artefakte für ETHUSDT...
+WARNING:tensorflow:From D:\market_regime_discovery\venv\Lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2026-01-13 01:51:20.669652: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+📥 Lade aktuelle Marktdaten für ETHUSDT...
+   Geladen: 43817 Candles (bis 2024-12-31 23:00:00+00:00)
+⚙️  Bereite Daten für Inferenz vor...
+D:\market_regime_discovery\venv\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+🧠 Führe Inferenz durch...
+❌ Inferenz-Fehler: Keine Statistiken für Regime 3 gefunden.
+2026-01-13 01:51:59.786661: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-13 01:52:01.671435: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+🔍 Lade trainierte Artefakte für BNBUSDT...
+WARNING:tensorflow:From D:\market_regime_discovery\venv\Lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2026-01-13 01:52:03.299755: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+📥 Lade aktuelle Marktdaten für BNBUSDT...
+   Geladen: 43817 Candles (bis 2024-12-31 23:00:00+00:00)
+⚙️  Bereite Daten für Inferenz vor...
+D:\market_regime_discovery\venv\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+🧠 Führe Inferenz durch...
+
+✅ Aktuelles Marktregime für BNBUSDT erkannt:
+   Regime-ID       : 7
+   P(up next hour) : 50.97% (⌀ 85.0h, Median 47.8h)
+   Historische Basis: 13009 Beispiele
+   Letzter Candle  : 2024-12-31 23:00:00+00:00
+
+⚠️  ACHTUNG: Dieses Regime zeigte signifikante Drift in der Walk-Forward-Validierung (ΔP(up) > 3%).
+   Interpretieren Sie das Signal mit besonderer Vorsicht!
+(venv) PS D:\market_regime_discovery> 
+
+
+
+
+python scripts/infer_latest.py --asset BTCUSDT
+python scripts/infer_latest.py --asset ETHUSDT
+python scripts/infer_latest.py --asset BNBUSDT
+
+
+
+
+(venv) PS D:\market_regime_discovery> # Für BTC
+>> python scripts/walk_forward_validate.py --asset BTCUSDT
+>>
+>> # Für ETH
+>> python scripts/walk_forward_validate.py --asset ETHUSDT
+>>
+>> # Für BNB
+>> python scripts/walk_forward_validate.py --asset BNBUSDT
+2026-01-16 20:08:25.024107: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-16 20:08:26.851552: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+🔍 Lade Konfiguration...
+📥 Lade historische Daten für BTCUSDT...
+   Geladen: 43817 Candles
+⚙️  Führe Walk-Forward-Validierung für BTCUSDT durch...
+WARNING:tensorflow:From D:\market_regime_discovery\venv\Lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2026-01-16 20:08:28.678804: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+📊 Walk-Forward-Validierung abgeschlossen für BTCUSDT:
+   Instabile Regime identifiziert: Keine
+   Drift-Punkte erkannt: 0
+
+✅ Alle Regime stabil – kein Retraining erforderlich.
+2026-01-16 20:08:53.285099: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-16 20:08:55.000372: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+🔍 Lade Konfiguration...
+📥 Lade historische Daten für ETHUSDT...
+   Geladen: 43817 Candles
+⚙️  Führe Walk-Forward-Validierung für ETHUSDT durch...
+WARNING:tensorflow:From D:\market_regime_discovery\venv\Lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2026-01-16 20:08:56.454723: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+📊 Walk-Forward-Validierung abgeschlossen für ETHUSDT:
+   Instabile Regime identifiziert: [2]
+   Drift-Punkte erkannt: 45
+
+⚠️  WARNUNG: Folgende Regime zeigten Instabilität:
+   - Regime 2
+2026-01-16 20:09:24.923763: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-16 20:09:27.094922: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+🔍 Lade Konfiguration...
+📥 Lade historische Daten für BNBUSDT...
+   Geladen: 43817 Candles
+⚙️  Führe Walk-Forward-Validierung für BNBUSDT durch...
+WARNING:tensorflow:From D:\market_regime_discovery\venv\Lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2026-01-16 20:09:28.731493: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+📊 Walk-Forward-Validierung abgeschlossen für BNBUSDT:
+   Instabile Regime identifiziert: [4]
+   Drift-Punkte erkannt: 2
+
+⚠️  WARNUNG: Folgende Regime zeigten Instabilität:
+   - Regime 4
+(venv) PS D:\market_regime_discovery> 
+
+
+
+D:\market_regime_discovery\
+├── artifacts/                  # Gespeicherte Modelle & Statistiken
+│   ├── cluster_model.pkl       # GMM-Clustermodell
+│   ├── encoder_only.keras      # Encoder-Teil des Autoencoders
+│   ├── feature_scaler.pkl      # Globaler Feature-Scaler (für Training)
+│   ├── latent_conditioning.pkl # PCA + Whitening für latente Raumbedingung
+│   ├── regime_stats.json       # P(up), Sharpe, n_samples pro Regime
+│   └── ml_health.json          # ML-Gesundheitsmetriken (Silhouette, Entropie, etc.)
+│
+├── checkpoints/                # Vollständiges Autoencoder-Modell
+│   └── autoencoder.keras       # Encoder + Decoder
+│
+├── config/                     # Konfigurationsdatei
+│   └── config.yaml             # Hyperparameter, Feature-Definitionen, Loss-Gewichte
+│
+├── data/                       # Rohdaten
+│   └── raw/
+│       └── BTCUSDT_1h.csv      # Hourly OHLCV-Daten (2020–2024)
+│
+├── scripts/                    # Ausführbare Skripte
+│   ├── fetch_data.py           # Lädt aktuelle Binance-Daten
+│   ├── infer_latest.py         # Ermittelt aktuelles Regime + Warnung bei Instabilität
+│   ├── monitor_and_retrain.py  # Überwacht Drift → triggert automatisches Retraining
+│   ├── train.py                # Trainingspipeline mit Denoising + Temporal Loss
+│   └── walk_forward_validate.py# Validiert Stabilität zwischen Train/Test (2020–2022 vs 2023–2024)
+│
+├── src/                        # Modulare ML-Komponenten
+│   ├── __init__.py
+│   ├── clustering.py           # GMM mit BIC, Min-Größe, Latent Conditioning
+│   ├── features.py             # Berechnet stationäre Features (vol_ratio, log_ret_norm, etc.)
+│   ├── ingestion.py            # Lädt und validiert OHLCV-Daten
+│   ├── latent.py               # Extrahiert Embeddings + PCA-Whitening
+│   ├── model.py                # Decoupled Autoencoder mit Lambda-Layer & Output_Shape
+│   ├── regimes.py              # Berechnet P(up) pro Cluster + temporales Glätten
+│   └── windowing.py            # Erstellt normierte Fenster + globalen Scaler
+│
+├── validation/                 # Walk-Forward-Ergebnisse
+│   ├── walk_forward_results.json # ΔP(up) pro Regime zwischen Train/Test
+│   └── wf_scaler.pkl           # Scaler für Validation-Phase (getrennt von Training)
+│
+├── venv/                       # Python Virtual Environment
+├── output.txt                  # Optional: Log-Datei für Ausgaben
+├── requirements.txt            # Abhängigkeiten (numpy, pandas, tensorflow, scikit-learn, ...)
+└── .gitignore                  # Ignorierte Dateien (z.B. *.pkl, *.keras)

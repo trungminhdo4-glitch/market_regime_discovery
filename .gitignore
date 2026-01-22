@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+.env
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Data Files
+data/raw/*.csv
+!data/raw/.gitkeep
+
+# Generated Artifacts (CRITICAL)
+artifacts/
+checkpoints/
+
+# Logs and Monitoring
+logs/
+*.log
+monitoring/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Local Configuration
+config/local.yaml
+*.secret
+*.key
+
+# Temporary Files
+*.tmp
+*.temp
+~$*
